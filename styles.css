@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+/*  your css code here. If applicable */
+.container{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    background-color: black;
+}
+.pad{
+    padding: 30px 20px;
+    position: relative;
+    width: 60%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(50,auto);
+    border: 1px solid black;
+    gap:2px;
+}
+.container .pad .square{
+    background-color: rgb(29, 29, 29);
+    width: 29px;
+    height: 29px;
+    transition: 1s;
+}
+.container .pad .square:hover{
+    background-color: greenyellow;
+}
+@media screen and (width<1200px) {
+    .container{
+        width: auto;
+    }
+    .pad{
+        width: auto;
+    }
+    .container .pad .square{
+        width: auto;
+        height: auto;
+    }
+
+}
